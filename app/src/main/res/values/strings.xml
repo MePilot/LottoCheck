@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="url_date">https://www.pais.co.il/include/getNextLotteryDate.ashx?type=1</string>
+    <string name="url_date_777">https://www.pais.co.il/include/getNextLotteryDate.ashx?type=5</string>
+    <string name="url_date_chance">https://www.pais.co.il/include/getNextLotteryDate.ashx?type=3</string>
+    <string name="url_date_123">https://www.pais.co.il/include/getNextLotteryDate.ashx?type=4</string>
+    <string name="url_stat">https://www.pais.co.il/lotto/currentlotto.aspx?lotteryId=</string>
+    <string name="url_stat_777">https://www.pais.co.il/777/CurrentLottery.aspx?lotteryId=</string>
+    <string name="url_homepage">https://www.pais.co.il/lotto/</string>
+
+    <string name="url_homepage_chance">https://www.pais.co.il/chance/</string>
+    <string name="url_homepage_123">https://www.pais.co.il/123/</string>
+    <string name="url_homepage_777">https://www.pais.co.il/777/</string>
+
+    <string name="url_results_lotto_extra">https://www.pais.co.il/lotto/showMoreResultsExtra.aspx?fromIndex=1&amp;amount=62</string>
+
+    <string name="url_results_lotto">https://www.pais.co.il/Lotto/lotto_resultsDownload.aspx</string>
+    <string name="url_results777">https://www.pais.co.il/777/showMoreResults.aspx?fromIndex=1&amp;amount=100</string>
+    <string name="url_results_chance">https://www.pais.co.il/chance/showMoreResults.aspx?fromIndex=1&amp;amount=49</string>
+    <string name="url_results_123">https://www.pais.co.il/123/showMoreResults.aspx?fromIndex=1&amp;amount=49</string>
+
+    <string name="format_date2">dd/MM/yyyy HH:mm</string>
+    <string name="msg_win">Congratulations! You won!!!</string>
+    <string name="msg_jackpot">Lotto jackpot reached %1$s&#8362;</string>
+    <string name="msg_ocr">"Ensure that all the combinations, lotto ID and date are visible. Wait until scanning is completed"</string>
+    <string name="txt_lotto_id">Copy selected numbers to the real ticket</string>
+    <string name="txt_lotto_days">&#160;days</string>
+    <string name="txt_lotto_hours">&#160;hours</string>
+    <string name="txt_lotto_mins">&#160;minutes</string>
+    <string name="txt_lotto_normal">Normal</string>
+    <string name="txt_lotto_double">Double</string>
+    <string name="txt_lotto_last_results">Last win statistics</string>
+    <string name="txt_lotto_extra">Extra:&#160;</string>
+    <string name="txt_lotto_extra_no">Extra: not playing</string>
+
+    <string name="txt_lotto_stat_guess">Guesses</string>
+    <string name="txt_lotto_stat_prizes">Prizes</string>
+    <string name="txt_lotto_stat_type">Prize</string>
+    <string name="txt_lotto_stat_sum">Sum &#8362;</string>
+
+
+    <string name="txt_lotto_chance_res">Results of last game (number %1$s)</string>
+    <string name="txt_list_number">Lotto ID: %1$s\nPlayed: %2$s\n%3$s</string>
+    <string name="txt_list_comb">Combinations</string>
+    <string name="txt_list_wait">Results in: %1$s</string>
+    <string name="txt_list_unchecked">Unchecked</string>
+    <string name="txt_list_checked">Checked</string>
+
+
+    <string name="txt_list_YS">There are still unchecked games. Are you sure?</string>
+    <string name="txt_list_cards">Game number %1$s</string>
+    <string name="txt_list_totalPrize">Total prize: Normal-%1$s&#8362;\tDouble-%2$s&#8362;</string>
+    <string name="txt_list_Prize">Total prize: %1$s&#8362;</string>
+    <string name="btn_list_yes">Yes</string>
+    <string name="btn_list_back">Back</string>
+
+    <string name="btn_list_old_only">Delete checked games only</string>
+    <string name="btn_list_cancel">Cancel</string>
+    <string name="txt_list_item">Empty list</string>
+    <string name="btn_generator_random">Random</string>
+    <string name="btn_list_delete">Clear list</string>
+    <string name="btn_list_check">Check</string>
+    <string name="btn_list_add">Add</string>
+    <string name="btn_lotto_play">Play</string>
+    <string name="btn_lotto_scan">Scan</string>
+    <string name="btn_lotto_my_games">Games</string>
+
+    <string name="btn_cards_results">Past results</string>
+
+    <string name="txt_ocr_num_received">Combinations received</string>
+    <string name="txt_ocr_date_received">ID and date received</string>
+    <string name="txt_ocr_lines">Number of combinations on a ticket:%1$s</string>
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Ocr dependencies cannot be downloaded due to low device storage</string>
+    <string name="ocr_scanExtra">Play Extra</string>
+    <string name="Next_lotto_info2">Next game:\nFirst price: %1$s&#8362;\nSecond price: %2$s&#8362;\nDate: %3$s, %4$s\nTime left: %5$s</string>
+    <string name="Next_chance_info">Next game:\nDate: %1$s, %2$s\nTime left: %3$s\n</string>
+    <string name="channel_name">LottoCheck</string>
+    <string name="AppName">Lotto Check</string>
+    <string name="err_conn">Unable to reach server. Lottery data may be in the process of update. Please revisit later.</string>
+    <string name="action_settings">Settings</string>
+    <string name="pref_lang">Language settings</string>
+    <string name="sw_notify_win">Inform me of win</string>
+    <string name="sw_notify_jackpot">Jackpot is above:</string>
+    <string name="list_sum">Choose sum</string>
+    <string name="lst_language">Select language</string>
+    <string name="cat_send">Notifications</string>
+    <string name="btn_help_finish">Finish</string>
+    <string name="btn_help_next">Next</string>
+    <string-array name="txt_lotto_stat_type">
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+        <item>Forth</item>
+        <item>Fifth</item>
+        <item>Sixth</item>
+    </string-array>
+    <string-array name="txt_help">
+        <item>This application is intended for those participating in Mifal a Pais lotteries. Here you can:\n\n* Receive up to date information about lotteries results\n\n* Scan your LOTO and 777 tickets and check them for winning\n\n* Receive notifications about high LOTO jackpots\n\n* View statistics of past lotteries\n\n* Use a random combinations generator</item>
+        <item>* Fill your loto ticket with numbers. Feel unsure about what numbers to pick? Then you can use a random numbers generator by pressing the \"PLAY\" button in Lotto Screen\n\n* After purchasing your participation ticket press the \"SCAN\" button</item>
+        <item>* In the scanner window, please allow the camera permission\n\n* Set the amount of combinations on your participation ticket\n\n* If you play LOTO, check if you your ticket is also participating in EXTRA lottery\n\n* Point your phone camera towards the participation ticket and follow the instructions at the button of the screen\n\n* Once the scanning is over, you will see your ticket added to your games list manager. You can visit it by pressing \"GAMES\" button</item>
+        <item>Game list manager allows you to view all your tickets and their status. You can add more scanned tickets, check them manually or remove them from the list\n\n* Checks on all new tickets is done automatically every day\n\n* You will receive a notification if at least one of your tickets is won\n\n* You can scan and add numerous tickets at once\n\n* You can scan new or old tickets alike</item>
+
+    </string-array>
+    <string-array name="txt_help_header">
+        <item>Welcome to Lotto Check</item>
+        <item>Instruction for LOTO and 777 players</item>
+        <item>Scanner</item>
+        <item>Game list manager</item>
+
+    </string-array>
+
+    <string-array name="txt_lotto_stat_type2">
+        <item>6+</item>
+        <item>6</item>
+        <item>5+</item>
+        <item>5</item>
+        <item>4+</item>
+        <item>4</item>
+        <item>3+</item>
+        <item>3</item>
+
+    </string-array>
+
+
+    <string-array name="Language">
+        <item>English</item>
+        <item>Hebrew</item>
+        <item>Russian</item>
+    </string-array>
+    <string-array name="languageAlias">
+        <item>"en"</item>
+        <item>"iw"</item>
+        <item>"ru"</item>
+    </string-array>
+
+    <string-array name="jackpot_name">
+        <item>5 billion</item>
+        <item>10 billion</item>
+        <item>15 billion</item>
+        <item>20 billion</item>
+        <item>25 billion</item>
+        <item>30 billion</item>
+        <item>35 billion</item>
+        <item>40 billion</item>
+    </string-array>
+
+    <string-array name="jackpot_sum">
+        <item>5000000</item>
+        <item>10000000</item>
+        <item>15000000</item>
+        <item>20000000</item>
+        <item>25000000</item>
+        <item>30000000</item>
+        <item>35000000</item>
+        <item>40000000</item>
+    </string-array>
+</resources>

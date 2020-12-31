@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Welcome to Lotto Check"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:padding="15dp"
+        android:text=""
+        android:textColor="@color/blue"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btn_help_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_above="@+id/pHelp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+        android:onClick="Next_Help"
+        android:text="@string/btn_help_next" />
+    <Button
+        android:id="@+id/btn_help_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_above="@+id/pHelp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:layout_margin="15dp"
+        android:onClick="Close_Help"
+        android:text="@string/btn_help_finish" />
+
+    <ProgressBar
+        android:id="@+id/pHelp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:max="4"
+        android:progress="1" />
+
+</RelativeLayout>
+

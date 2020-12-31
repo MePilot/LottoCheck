@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+
+    android:background="@drawable/grid_background_cards"
+    >
+    <TextView
+        android:id="@+id/CardDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_list_cards"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:layout_gravity="center"
+
+        >
+    </TextView>
+
+    <GridLayout
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:animationCache="true"
+
+            android:columnCount="4"
+            android:rowCount="2"
+            android:orientation="horizontal"
+            android:layoutDirection="ltr"
+            android:gravity="center_horizontal"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/btn_lotto_play"
+                android:src="@drawable/pike"
+                android:layout_columnWeight="1"
+
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/btn_lotto_play"
+                android:src="@drawable/heart"
+                android:layout_columnWeight="1"
+
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/btn_lotto_play"
+                android:src="@drawable/diamond"
+                android:layout_columnWeight="1"
+
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/btn_lotto_play"
+                android:src="@drawable/clubs"
+                android:layout_columnWeight="1"
+                />
+            <TextView
+                android:id="@+id/card1_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_columnWeight="1"
+                android:layout_gravity="top|center"
+
+                />
+            <TextView
+                android:id="@+id/card2_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_columnWeight="1"
+                android:layout_gravity="top|center"
+
+                />
+            <TextView
+                android:id="@+id/card3_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_columnWeight="1"
+                android:layout_gravity="top|center"
+                />
+            <TextView
+                android:id="@+id/card4_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_columnWeight="1"
+                android:layout_gravity="top|center"
+                />
+
+        </GridLayout>
+
+
+
+</LinearLayout>
+

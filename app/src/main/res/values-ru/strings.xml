@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="url_date">https://www.pais.co.il/include/getNextLotteryDate.ashx?type=1</string>
+    <string name="url_date_chance">https://www.pais.co.il/include/getNextLotteryDate.ashx?type=3</string>
+    <string name="url_date_123">https://www.pais.co.il/include/getNextLotteryDate.ashx?type=4</string>
+    <string name="url_date_777">https://www.pais.co.il/include/getNextLotteryDate.ashx?type=5</string>
+
+    <string name="url_stat">https://www.pais.co.il/lotto/currentlotto.aspx?lotteryId=</string>
+    <string name="url_stat_777">https://www.pais.co.il/777/CurrentLottery.aspx?lotteryId=</string>
+    <string name="url_homepage">https://www.pais.co.il/lotto/</string>
+    <string name="url_homepage_chance">https://www.pais.co.il/chance/</string>
+    <string name="url_homepage_123">https://www.pais.co.il/123/</string>
+    <string name="url_homepage_777">https://www.pais.co.il/777/</string>
+
+    <string name="url_results_lotto_extra">https://www.pais.co.il/lotto/showMoreResultsExtra.aspx?fromIndex=1&amp;amount=62</string>
+    <string name="url_results_lotto">https://www.pais.co.il/Lotto/lotto_resultsDownload.aspx</string>
+    <string name="url_results777">https://www.pais.co.il/777/showMoreResults.aspx?fromIndex=1&amp;amount=100</string>
+    <string name="url_results_chance">https://www.pais.co.il/chance/showMoreResults.aspx?fromIndex=1&amp;amount=49</string>
+    <string name="url_results_123">https://www.pais.co.il/123/showMoreResults.aspx?fromIndex=1&amp;amount=49</string>
+
+    <string name="txt_lotto_stat_guess">Совпадения</string>
+    <string name="txt_lotto_stat_prizes">Призы</string>
+    <string name="txt_lotto_stat_type">Приз</string>
+    <string name="txt_lotto_stat_sum">Сумма &#8362;</string>
+
+    <string name="format_date2">dd/MM/yyyy HH:mm</string>
+    <string name="msg_win">Поздравляем! Вы выиграли!!!</string>
+    <string name="msg_jackpot">Внимание! Приз достиг %1$s&#8362;</string>
+    <string name="msg_ocr">"Убедитесь, что в кадр вошли все комбинации, номер розыгрыша и дата. Дождитесь окончания сканирования"</string>
+    <string name="txt_lotto_id">Заполните лотерейный билет из выбранных комбинаций</string>
+    <string name="txt_lotto_days">&#160;дней</string>
+    <string name="txt_lotto_hours">&#160;часов</string>
+    <string name="txt_lotto_mins">&#160;минут</string>
+    <string name="txt_lotto_normal">Обычный</string>
+    <string name="txt_lotto_double">Двойной</string>
+    <string name="txt_lotto_last_results">Статистика последнего розыгрыша</string>
+    <string name="txt_lotto_extra">Экстра:&#160;</string>
+    <string name="txt_lotto_extra_no">Экстра: не участвует</string>
+    <string name="txt_lotto_chance_res">Результаты последнего розыгрыша (номер %1$s)</string>
+    <string name="txt_list_number">Номер лотереи: %1$s\nСыграно: %2$s\n%3$s</string>
+    <string name="txt_list_totalPrize">Выигрыш: Обычный-%1$s&#8362;\tДвойной-%2$s&#8362;</string>
+    <string name="txt_list_YS">Имеются непроверенные игры. Вы уверены?</string>
+    <string name="txt_list_comb">Комбинации</string>
+    <string name="btn_list_yes">Да</string>
+    <string name="btn_list_cancel">Отмена</string>
+    <string name="txt_list_Prize">Приз: %1$s&#8362;</string>
+    <string name="txt_list_wait">Результаты через: %1$s</string>
+    <string name="btn_list_add">Добавить</string>
+    <string name="btn_generator_random">Случайный</string>
+    <string name="btn_list_delete">Удалить игры</string>
+    <string name="btn_list_old_only">Удалить только проверенные</string>
+    <string name="btn_list_check">Проверить</string>
+    <string name="txt_list_unchecked">Не проверено</string>
+    <string name="txt_list_checked">Проверено</string>
+    <string name="btn_lotto_play">Играть</string>
+    <string name="btn_lotto_scan">Скан</string>
+    <string name="btn_lotto_my_games">Игры</string>
+    <string name="btn_cards_results">Прошлые результаты</string>
+    <string name="ok">OK</string>
+    <string name="btn_list_back">Назад</string>
+    <string name="txt_list_cards">Розыгрыш номер %1$s</string>
+    <string name="permission_camera_rationale">Для сканирования нужен доступ к камере</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Ocr dependencies cannot be downloaded due to low device storage</string>
+    <string name="ocr_scanExtra">Участвует в Экстра</string>
+    <string name="txt_ocr_num_received">Комбинации получены</string>
+    <string name="txt_ocr_lines">Количество комбинаций на билете: %1$s</string>
+    <string name="txt_ocr_date_received">Дата и номер розыгрыша получены</string>
+    <string name="Next_lotto_info2"><u>Следующий розыгрыш:</u>\nГлавный приз: %1$s&#8362;\nВторой приз: %2$s&#8362;\nДата: %3$s, %4$s\nВремени осталось: %5$s</string>
+    <string name="Next_chance_info"><u>Следующий розыгрыш:</u>\nДата: %1$s, %2$s\nВремени осталось: %3$s</string>
+    <string name="channel_name">LottoCheck</string>
+    <string name="AppName">Lotto Check</string>
+    <string name="err_conn">Невозможно связаться с сервером. Возможно данные розыгрыша в процессе обновления. Пожалуйста вернитесь позже.</string>
+    <string name="txt_list_item">Список пуст</string>
+    <string name="action_settings">Настройки</string>
+    <string name="sw_notify_win">Оповещать о выигрыше</string>
+    <string name="sw_notify_jackpot">Приз выше:</string>
+    <string name="pref_lang">Настройки языка</string>
+    <string name="list_sum">Выберите сумму</string>
+    <string name="lst_language">Выбрать язык</string>
+    <string name="cat_send">Уведомления</string>
+    <string name="btn_help_finish">Закончить</string>
+    <string name="btn_help_next">Далее</string>
+    <string-array name="txt_lotto_stat_type">
+        <item>Первый</item>
+        <item>Второй</item>
+        <item>Третий</item>
+        <item>Четвертый</item>
+        <item>Пятый</item>
+        <item>Шестой</item>
+    </string-array>
+
+    <string-array name="txt_help">
+        <item>Эта аппликация предназначена для всех игроков в лотереи Мифаль А Паис. Здесь Вы сможете:\n\n* Получить последнюю информацию о результатах розыгрышей\n\n* Сканировать Ваши билеты ЛОТО и 777 для их последующей проверки\n\n* Получать уведомления о крупных разыгрываемых призах в ЛОТО\n\n* Просматривать статистику прошлых розыгрышей\n\n* Использовать генератор случайных чисел для заполнения билетов</item>
+        <item>* Заполните Ваш билет комбинациями. Не уверены какие числа выбрать? Воспользуйтесь генератором случайных чисел нажав на кнопку \"ИГРАТЬ\" во вкладке ЛОТО\n\n* После приобретения билета участия нажмите на кнопку \"СКАНИРОВАТЬ\"</item>
+        <item>* В окне сканера, пожалуйста разрешите работу камеры телефона\n\n* Укажите количество комбинаций на Вашем билете участия\n\n* Если Вы играете в ЛОТО, укажите также учавствует ли билет также в лотереи ЭКСТРА\n\n* Направьте камеру Вашего телефона на билет участия и следуйте указаниям внизу экрана\n\n* Когда сканирование будет завершено, Ваш билет добавится в список сохраненных игр. Вы можете перейти в него нажав на кнопку \"ИГРЫ\"</item>
+        <item>В списке сохраненных игр будут находиться все Ваши билеты а так же их статус. Вы сможете добавить новые отсканированные билеты, проверить их, и удалить из списка.\n\n* Автоматическая проверка сохраненных билетов производится каждый день\n\n* В случае выигрыша одного или нескольких билетов Вы получаете уведомление\n\n* Вы можете сканировать неограниченное количество билетов за раз\n\n* Вы также можете сканировать билеты от предыдущих розыгрышей</item>
+
+    </string-array>
+
+    <string-array name="txt_help_header">
+        <item>Добро пожаловать в Lotto Check</item>
+        <item>Руководство пользователя</item>
+        <item>Сканер</item>
+        <item>Список билетов</item>
+
+    </string-array>
+    <string-array name="Language">
+        <item>Английский</item>
+        <item>Иврит</item>
+        <item>Русский</item>
+    </string-array>
+    <string-array name="languageAlias">
+        <item>"en"</item>
+        <item>"iw"</item>
+        <item>"ru"</item>
+    </string-array>
+    <string-array name="jackpot_name">
+        <item>5 миллионов</item>
+        <item>10 миллионов</item>
+        <item>15 миллионов</item>
+        <item>20 миллионов</item>
+        <item>25 миллионов</item>
+        <item>30 миллионов</item>
+        <item>35 миллионов</item>
+        <item>40 миллионов</item>
+    </string-array>
+    <string-array name="jackpot_sum">
+        <item>5000000</item>
+        <item>10000000</item>
+        <item>15000000</item>
+        <item>20000000</item>
+        <item>25000000</item>
+        <item>30000000</item>
+        <item>35000000</item>
+        <item>40000000</item>
+    </string-array>
+
+</resources>

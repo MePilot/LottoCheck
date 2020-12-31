@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/cat_send">
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="Notify_win"
+            android:title="@string/sw_notify_win" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="Notify_jackpot"
+            android:title="@string/sw_notify_jackpot" />
+
+        <ListPreference
+
+            android:key="jackpot_preference"
+            android:title="@string/list_sum"
+            android:entries="@array/jackpot_name"
+            android:entryValues="@array/jackpot_sum"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_lang">
+
+    <ListPreference
+
+        android:key="language_preference"
+        android:title="@string/lst_language"
+        android:entries="@array/Language"
+        android:entryValues="@array/languageAlias"/>
+    </PreferenceCategory>
+</androidx.preference.PreferenceScreen>

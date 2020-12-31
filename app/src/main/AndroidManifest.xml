@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="home.loto">
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="false"
+        android:name="home.loto.Lotto"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/AppName"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:testOnly="false"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9196830139907982~5693500649"
+            />
+
+        <activity
+            android:name="home.loto.Lotto_Activity"
+            android:label="@string/AppName"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="home.loto.Lotto_List"
+            android:label="Manager"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="home.loto.SplashScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="LottoCheck"
+            android:theme="@style/FullscreenTheme"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="home.ocrreader.OcrCaptureActivity"
+            android:label="Read Text"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="home.loto.Lotto_Generator2"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="home.loto.BaseActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="home.loto.SettingActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="home.loto.Lotto_List777"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="home.ocrreader.OcrCaptureActivity777"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="home.loto.Lotto_ListCards" />
+        <activity android:name="home.loto.Lotto_List123" />
+        <activity android:name=".FragmentPagerSupport" />
+
+    </application>
+
+</manifest>

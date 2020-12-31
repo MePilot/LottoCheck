@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ca-app-pub-3940256099942544/6300978111-->
+<!--ca-app-pub-9196830139907982/2762253343-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/black_overlay"
+tools:context=".Lotto_Activity"
+>
+
+<com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/appBarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue"
+        android:theme="@style/ThemeOverlay.MyApp.ActionBar" />
+
+
+
+</com.google.android.material.appbar.AppBarLayout>
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardLotto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="20dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+    android:visibility="gone"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:contentDescription="@string/btn_lotto_play"
+                android:src="@drawable/icon_loto" />
+
+            <TextView
+                android:id="@+id/txtNextInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:text="@string/Next_lotto_info2"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+                android:id="@+id/btnPlay"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:backgroundTint="@color/red"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:onClick="Play"
+                android:text="@string/btn_lotto_play" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:backgroundTint="@color/red"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OCR"
+                android:text="@string/btn_lotto_scan" />
+
+            <Button
+                android:id="@+id/btnManager"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:backgroundTint="@color/red"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="MyGames"
+                android:text="@string/btn_lotto_my_games" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lotoLastRes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:gravity="center"
+
+            >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/grid_background"
+                android:layoutDirection="rtl"
+                android:layout_marginBottom="10dp"
+                >
+            <TextView
+                android:id="@+id/txtNumStrong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/iconloto_strong"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <TextView
+                    android:id="@+id/txtNum1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/iconloto"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+
+                    />
+                <TextView
+                    android:id="@+id/txtNum2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/iconloto"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/txtNum3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/iconloto"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/txtNum4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/iconloto"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/txtNum5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/iconloto"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/txtNum6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/iconloto"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:backgroundTint="@color/red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:onClick="ShowStat"
+            android:text="@string/txt_lotto_last_results" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardLottoStat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+       android:visibility="gone"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnBack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/card"
+                        android:gravity="center_horizontal"
+                        android:text="@string/txt_lotto_normal"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+                        android:id="@+id/tableStat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0,1,2">
+
+                    </TableLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/card"
+                        android:gravity="center_horizontal"
+                        android:text="@string/txt_lotto_double"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+                        android:id="@+id/tableStatDouble"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0,1,2">
+
+                    </TableLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <Button
+                android:id="@+id/btnBack"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/red"
+                android:onClick="BackToLoto"
+                android:text="@string/btn_list_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardChance"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="20dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+    android:visibility="gone"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:contentDescription="@string/btn_lotto_play"
+                android:src="@drawable/icon_chance" />
+
+            <TextView
+                android:id="@+id/txtNextChanceInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:text="@string/Next_chance_info"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+
+
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtLastResChance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:animationCache="true"
+            android:background="@drawable/grid_background_cards"
+            android:columnCount="4"
+            android:rowCount="2"
+            android:orientation="horizontal"
+            android:layoutDirection="ltr"
+            android:gravity="center_horizontal"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/btn_lotto_play"
+                android:src="@drawable/pike"
+                android:layout_columnWeight="1"
+
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/btn_lotto_play"
+                android:src="@drawable/heart"
+                android:layout_columnWeight="1"
+
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/btn_lotto_play"
+                android:src="@drawable/diamond"
+                android:layout_columnWeight="1"
+
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/btn_lotto_play"
+                android:src="@drawable/clubs"
+                android:layout_columnWeight="1"
+                />
+            <TextView
+                android:id="@+id/card1_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_columnWeight="1"
+                android:layout_gravity="top|center"
+
+                />
+            <TextView
+                android:id="@+id/card2_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_columnWeight="1"
+                android:layout_gravity="top|center"
+
+                />
+            <TextView
+                android:id="@+id/card3_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_columnWeight="1"
+                android:layout_gravity="top|center"
+                />
+            <TextView
+                android:id="@+id/card4_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_columnWeight="1"
+                android:layout_gravity="top|center"
+                />
+
+        </GridLayout>
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:backgroundTint="@color/green"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:onClick="CardsResults"
+            android:text="@string/btn_cards_results" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/card123"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="20dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+    android:visibility="gone"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:contentDescription="@string/btn_lotto_play"
+                android:src="@drawable/icon_123" />
+
+            <TextView
+                android:id="@+id/txtNext123Info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:text="@string/Next_chance_info"
+                android:textColor="@color/orange2"
+                android:textStyle="bold"
+
+
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtLastRes123"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:background="@drawable/grid_background_123"
+            android:gravity="center_vertical|center_horizontal"
+            android:layoutDirection="ltr"
+            >
+            <TextView
+                android:id="@+id/txtDig1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/icon123"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal"
+                />
+            <TextView
+                android:id="@+id/txtDig2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/icon123"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal"
+                />
+            <TextView
+                android:id="@+id/txtDig3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/icon123"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal"
+                />
+
+
+        </LinearLayout>
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:backgroundTint="@color/orange2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:onClick="_123Results"
+            android:text="@string/btn_cards_results" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/card777"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="20dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+    android:visibility="gone"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:contentDescription="@string/btn_lotto_play"
+                android:src="@drawable/icon_777" />
+
+            <TextView
+                android:id="@+id/txtNext777Info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:text="@string/Next_lotto_info2"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OCR777"
+                android:text="@string/btn_lotto_scan" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="MyGames777"
+                android:text="@string/btn_lotto_my_games" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtLastRes777"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+        <home.loto.AutoGridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:context=".GridXMLActivity"
+            android:background="@drawable/grid_background_777"
+            android:columnCount="7"
+            app:columnWidth="45dp"
+            android:layoutDirection="rtl"
+            >
+            <TextView
+                android:id="@+id/txt777Num1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon777"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/txt777Num2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon777"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/txt777Num3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon777"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/txt777Num4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon777"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/txt777Num5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon777"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/txt777Num6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon777"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/txt777Num7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon777"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/txt777Num8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon777"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/txt777Num9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon777"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/txt777Num10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon777"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/txt777Num11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon777"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/txt777Num12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon777"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/txt777Num13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon777"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/txt777Num14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon777"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/txt777Num15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon777"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/txt777Num16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon777"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/txt777Num17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon777"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+        </home.loto.AutoGridLayout>
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:onClick="ShowStat777"
+            android:text="@string/txt_lotto_last_results" />
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card777stat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            >
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tableStat777"
+                android:stretchColumns="0,1,2"
+                >
+
+            </TableLayout>
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="BackTo777"
+                android:text="@string/btn_list_back" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl"
+        app:layout_constraintBottom_toTopOf="@+id/adView">
+
+        <Button
+            android:id="@+id/btnLotto"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="לוטו"
+            android:textColor="@color/red1"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:onClick="show_lotto"
+            android:textStyle="bold"
+            android:alpha="0.4"
+            />
+
+        <Button
+            android:id="@+id/btnChance"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textSize="22sp"
+            android:textColor="@color/green"
+            android:layout_weight="1"
+            android:text="צ'אנס"
+            android:onClick="show_chance"
+            android:textStyle="bold"
+            android:alpha="0.4"
+            />
+
+        <Button
+            android:id="@+id/btn123"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="123"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:textColor="@color/orange"
+            android:onClick="show_123"
+            android:textStyle="bold"
+            android:alpha="0.4"
+            />
+
+        <Button
+            android:id="@+id/btn777"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="777"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:textColor="@color/colorAccent"
+            android:onClick="show_777"
+            android:textStyle="bold"
+            android:alpha="0.4"
+            />
+    </LinearLayout>
+
+<com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/adView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    ads:adSize="SMART_BANNER"
+    ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+    ads:layout_constraintHorizontal_bias="0.0"
+    ads:layout_constraintVertical_bias="1.0"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/cardLotto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

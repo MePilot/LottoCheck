@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="url_date">https://www.pais.co.il/include/getNextLotteryDate.ashx?type=1</string>
+    <string name="url_date_chance">https://www.pais.co.il/include/getNextLotteryDate.ashx?type=3</string>
+    <string name="url_date_123">https://www.pais.co.il/include/getNextLotteryDate.ashx?type=4</string>
+    <string name="url_date_777">https://www.pais.co.il/include/getNextLotteryDate.ashx?type=5</string>
+    <string name="url_stat">https://www.pais.co.il/lotto/currentlotto.aspx?lotteryId=</string>
+    <string name="url_stat_777">https://www.pais.co.il/777/CurrentLottery.aspx?lotteryId=</string>
+
+    <string name="url_homepage">https://www.pais.co.il/lotto/</string>
+    <string name="url_homepage_chance">https://www.pais.co.il/chance/</string>
+    <string name="url_homepage_123">https://www.pais.co.il/123/</string>
+    <string name="url_homepage_777">https://www.pais.co.il/777/</string>
+
+    <string name="url_results_lotto_extra">https://www.pais.co.il/lotto/showMoreResultsExtra.aspx?fromIndex=1&amp;amount=62</string>
+    <string name="url_results_lotto">https://www.pais.co.il/Lotto/lotto_resultsDownload.aspx</string>
+    <string name="url_results777">https://www.pais.co.il/777/showMoreResults.aspx?fromIndex=1&amp;amount=100</string>
+    <string name="url_results_chance">https://www.pais.co.il/chance/showMoreResults.aspx?fromIndex=1&amp;amount=49</string>
+    <string name="url_results_123">https://www.pais.co.il/123/showMoreResults.aspx?fromIndex=1&amp;amount=49</string>
+
+    <string name="txt_lotto_stat_guess">מס\' ניחושים</string>
+    <string name="txt_lotto_stat_prizes">כמות זכיות</string>
+    <string name="txt_lotto_stat_type">גובה הפרס</string>
+    <string name="txt_lotto_stat_sum">סכום&#8362;</string>
+
+    <string name="format_date2">dd/MM/yyyy HH:mm</string>
+    <string name="msg_win">מזל טוב! זכיתה!!!</string>
+    <string name="msg_jackpot"> הפרס הראשון הגיע ל&#8362;%1$s</string>
+    <string name="msg_ocr">"נא ודא כי רואים את כל הצירופים, מס' הגרלה ותאריך. יש להמתין עד סיום הסריקה"</string>
+    <string name="txt_lotto_id">יש להעתיק את הצירוף הנבחר לכרטיס לוטו</string>
+    <string name="txt_lotto_days">&#160;ימים</string>
+    <string name="txt_lotto_hours">&#160;שעות</string>
+    <string name="txt_lotto_mins">&#160;דקות</string>
+    <string name="txt_lotto_normal">רגיל</string>
+    <string name="txt_lotto_double">דאבל</string>
+    <string name="txt_lotto_last_results">סטטיסטיקת זכיות אחרונה</string>
+    <string name="txt_lotto_extra">אקסטרא:&#160;</string>
+    <string name="txt_lotto_extra_no">אקסטרא: לא משתתף</string>
+    <string name="txt_lotto_chance_res">תוצאות הגרלה אחרונה (מס\' %1$s)</string>
+    <string name="txt_list_number">הגרלה מס\' %1$s \nשיחק: %2$s\n%3$s</string>
+    <string name="txt_list_YS">יש כרטיסים שעדייו לא נבדקו. האם אתה בטוח?</string>
+    <string name="btn_list_yes">כן</string>
+    <string name="btn_list_cancel">ביטול</string>
+    <string name="btn_generator_random">צירוף אקראי</string>
+    <string name="btn_list_add">הוסף</string>
+    <string name="btn_cards_results">תוצאות קודמות</string>
+    <string name="txt_list_cards">מס\' הגרלה %1$s</string>
+    <string name="txt_list_checked">נבדק</string>
+    <string name="txt_list_comb">צירופים</string>
+    <string name="txt_list_totalPrize">סכום זכייה: רגיל-&#8362;%1$s\t דאבל-&#8362;%2$s</string>
+    <string name="txt_list_Prize">סכום זכייה:&#8362;%1$s</string>
+    <string name="txt_list_wait">התוצאות בעוד: %1$s</string>
+    <string name="txt_list_unchecked">לא נבדק</string>
+    <string name="btn_list_back">אחורה</string>
+    <string name="btn_list_delete">למחוק</string>
+    <string name="btn_list_old_only">למחוק רק כרטיסים שנבדקו</string>
+    <string name="btn_list_check">בדיקה</string>
+    <string name="txt_ocr_num_received">צירופים נקלטו</string>
+    <string name="txt_ocr_date_received">מספר הגרלה ותאריך נקלט</string>
+    <string name="txt_ocr_lines">כמות הצירופים על כרטיס השתתפות: %1$s</string>
+    <string name="btn_lotto_play">שחק</string>
+    <string name="btn_lotto_scan">סריקה</string>
+    <string name="btn_lotto_my_games">משחקים</string>
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">גישה למצלמה נדרשת לצורך סריקה</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Ocr dependencies cannot be downloaded due to low device storage</string>
+    <string name="ocr_scanExtra">משתתף באקסטרה</string>
+    <string name="Next_lotto_info2">הגרלה קרובה\nפרס ראשון: &#8362; %1$s \nפרס שני: &#8362; %2$s \nתאריך: %3$s,%4$s \nזמן שנותר: %5$s</string>
+    <string name="Next_chance_info">הגרלה קרובה:\nתאריך:%1$s, %2$s\nזמן שנותר: %3$s</string>
+    <string name="channel_name">LottoCheck</string>
+    <string name="AppName">Lotto Check</string>
+    <string name="txt_list_item">רשימה ריקה</string>
+    <string name="err_conn">לא ניתן לגשת לשרת. יתכן שתוצאות ההגרלה מחודשים כרגע. אנא נסו מאוחר יותר.</string>
+    <string name="action_settings">הגדרות</string>
+    <string name="sw_notify_win">במקרה זכייה</string>
+    <string name="pref_lang">הגדרות ספה</string>
+    <string name="sw_notify_jackpot">עבור פרסים גדולים או שווים ל</string>
+    <string name="list_sum">בחר סכום</string>
+    <string name="lst_language">בחר ספה</string>
+    <string name="cat_send">לקבל התראות</string>
+    <string name="btn_help_finish">סיום</string>
+    <string name="btn_help_next">המשך</string>
+    <string-array name="txt_help">
+        <item>האפליקציה מתאימה לכל המשתתפים בהגרלות של מפעל הפיס. כאן תוכלו:\n\n* לקבל מידע מעודכן לגבי תוצאות הגרלות של מפעל הפיס.\n\n* לסרוק כרטיסי השתתפות של לוטו ו777 ולבדוק זכיות\n\n\* לקבל התראות על פרסים גדולים בלוטו\n\n* לראות סטטיסטיקה של זכיות קודמות\n\n* להיעזר בצירופים אקראים במילוי טופס לוטו </item>
+        <item>* מלא את הכריס בצירופים. לא בטוח איזה מספרים לבחור? השתמש בגנרטור של צירופים אקראים על ידי לחיצה על כפתור \"שחק\"\n\n* אחרי רכישת כרטיס השתתפות לחצו על כפתור \"סריקה\" </item>
+        <item>* בחלון סריקה יש לאשר את השימוש במצלמת טלפון\n\n* ציין את כמות הצירופים על הכרטיס השתתפות\n\n* אם מדובר ברטיס לוטו, ציין האם הוא משתתף גם בהגרלת אקסטרא\n\n* יש להפנות את מצלמת טלפון לכרטיס השתתפות ולפעל לפי הוראות בחלק התחתון של המסך\n\n* אחרי סיום הסריקה כרטיסך ישמר ברשימת משחקים. ניתן להגיע לרשימה על ידי לחיצה על כפתור \"משחקים\"</item>
+        <item>בחלון רשימת משחקים תוכל לצפות בכל הכרטיסים שלך והסטטוס שלהם. תוכל להוסיף כרטיסים נוספים, לבדוק אותם ולמחוק מרשימה.\n\nהבדיקה של כרטיסים חדשים ברשימה מתבצעת באופן אוטומטי כל יום\n\n* במקרה זכייה של לפחות אחד מהכרטיסים ברשימה תקבל התראה\n\n* אין הגבלה על כמות הכרטיסים שניתן לסרוק בבד אחד\n\n* תוכל לסרוק ולבדוק גם כרטיסים מהגרלות הקודמות</item>
+
+    </string-array>
+
+    <string-array name="txt_help_header">
+    <item>ברוכים הבאים ללוטו צ\'אק</item>
+    <item>מדריך משתמש</item>
+    <item>סריקה</item>
+    <item>רשימת כרטיסים</item>
+    </string-array>
+
+
+    <string-array name="txt_lotto_stat_type">
+        <item>ראשון</item>
+        <item>שני</item>
+        <item>שלישי</item>
+        <item>רביעי</item>
+        <item>חמישי</item>
+        <item>שישי</item>
+    </string-array>
+
+    <string-array name="Language">
+        <item>אנגלית</item>
+        <item>עברית</item>
+        <item>רוסית</item>
+    </string-array>
+    <string-array name="languageAlias">
+        <item>"en"</item>
+        <item>"iw"</item>
+        <item>"ru"</item>
+    </string-array>
+    <string-array name="jackpot_name">
+        <item>5 מיליון</item>
+        <item>10 מיליון</item>
+        <item>15 מיליון</item>
+        <item>20 מיליון</item>
+        <item>25 מיליון</item>
+        <item>30 מיליון</item>
+        <item>35 מיליון</item>
+        <item>40 מיליון</item>
+    </string-array>
+    <string-array name="jackpot_sum">
+        <item>5000000</item>
+        <item>10000000</item>
+        <item>15000000</item>
+        <item>20000000</item>
+        <item>25000000</item>
+        <item>30000000</item>
+        <item>35000000</item>
+        <item>40000000</item>
+    </string-array>
+
+</resources>
